@@ -1,0 +1,65 @@
+
+/*impostazione iniziale della pagina*/
+main{
+  width: 1000px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.container{
+    margin: 0 auto;
+  display: flex;
+}
+
+.img-container{
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-sidebar{
+    overflow: hidden;
+}  
+
+.img-sidebar{
+    background-color: aqua;
+    width: 20%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    font-size: x-large;
+}
+
+
+.img-sidebar > img{
+    width: 100%;
+    object-fit: cover;
+   
+}
+.img-container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+
+
+img.active{
+    opacity: 1;
+}
+
+
+.arrow-top{
+    position: absolute;
+    top: 10px;
+
+}
+.arrow-bottom{
+    position: absolute;
+    bottom: 10px;
+
+}
