@@ -20,37 +20,60 @@ main{
 
 .img-sidebar{
     overflow: hidden;
-}  
+} 
+
 
 .img-sidebar{
-    background-color: aqua;
     width: 20%;
     height: 400px;
     overflow: hidden;
     position: relative;
     font-size: x-large;
+    display: flex;
+    flex-direction: column;
 }
 
-
-.img-sidebar > img{
+ img{
     width: 100%;
-    object-fit: cover;
-   
+    height: 100%;
+    object-fit: cover; 
 }
-.img-container > img{
+
+.img-side-box{
+    overflow: hidden;
+    border: 0px solid #ffff;
+}
+.img-side-box.active{
+    border: 4px solid #ffff;
+} 
+
+.img-container> div > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     top: 0;
-    opacity: 0;
+}
+.img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
 }
 
+.boxframe{
+    opacity: 0;
+    position: relative;
+    width: 100%;
+}
 
-
-img.active{
+.active{
     opacity: 1;
 }
+
+
+
 
 
 .arrow-top{
@@ -63,3 +86,11 @@ img.active{
     bottom: 10px;
 
 }
+
+.box-text{
+    position: absolute;
+    top: 290px;
+    right: 10px;
+    color: white;
+}
+
